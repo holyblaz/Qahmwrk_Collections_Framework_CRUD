@@ -28,13 +28,10 @@ public class Game {
         int player2Num = findByName(name2);
 
         if (player1Num == -1) {
-            throw new NotRegisteredException("Игрок" + name1 + "не заргестрирован");
+            throw new NotRegisteredException("Игрок" + name1 + "не зарегестрирован");
         }
         if (player2Num == -1) {
-            throw new NotRegisteredException("Игрок" + name2 + "не заргестрирован");
-        }
-        if (player2Num == player2Num) {
-            throw new NotRegisteredException("Игрок" + name2 + "не заргестрирован");
+            throw new NotRegisteredException("Игрок" + name2 + "не зарегестрирован");
         }
         int strength1 = players.get(player1Num).getStrength();
         int strength2 = players.get(player2Num).getStrength();

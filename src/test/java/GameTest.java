@@ -40,14 +40,6 @@ public class GameTest {
     }
 
     @Test
-    public void shouldShowNotRegisteredException() {
-        game.register(second);
-        game.register(fourth);
-
-        Assertions.assertThrows(NotRegisteredException.class, () -> game.round("Ivan", "Ivan"));
-    }
-
-    @Test
     public void shouldShowNotRegisteredExceptionPlayerOneNotFound() {
         game.register(second);
         game.register(fourth);
